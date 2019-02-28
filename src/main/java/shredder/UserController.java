@@ -25,15 +25,15 @@ public class UserController {
 
 
     @GetMapping("/user")
-    public Iterable<User> allUsers(){
-        Iterable<User> userList = userRepository.findAll();
+    public Iterable<Users> allUsers(){
+        Iterable<Users> userList = userRepository.findAll();
         return userList;
     }
 
 //    @PostMapping("/user/login")
-//    public HashMap login(@RequestBody User user, HttpSession session) throws Exception{
+//    public HashMap login(@RequestBody Users user, HttpSession session) throws Exception{
 //        bCryptPasswordEncoder = new BCryptPasswordEncoder();
-//        User userLoggingIn = userRepository.findByUsername(user.getUsername());
+//        Users userLoggingIn = userRepository.findByUsername(user.getUsername());
 //        boolean validLogin = bCryptPasswordEncoder.matches(user.getPassword(), userLoggingIn.getPassword());
 //        if(validLogin){
 //            session.setAttribute("username", userLoggingIn.getUsername());
@@ -49,9 +49,9 @@ public class UserController {
 //    }
 
 //    @PostMapping("/user/login")
-//    public User login(@RequestBody User user, HttpSession session) throws Exception{
+//    public Users login(@RequestBody Users user, HttpSession session) throws Exception{
 //        bCryptPasswordEncoder = new BCryptPasswordEncoder();
-//        User userLoggingIn = userRepository.findByUsername(user.getUsername());
+//        Users userLoggingIn = userRepository.findByUsername(user.getUsername());
 //        boolean validLogin = bCryptPasswordEncoder.matches(user.getPassword(), userLoggingIn.getPassword());
 //        if(validLogin){
 //            session.setAttribute("username", userLoggingIn.getUsername());
@@ -63,9 +63,9 @@ public class UserController {
 //    }
 
     @PostMapping("/user/login")
-    public HashMap login(@RequestBody User user, HttpSession session) throws Exception{
+    public HashMap login(@RequestBody Users user, HttpSession session) throws Exception{
         bCryptPasswordEncoder = new BCryptPasswordEncoder();
-        User userLoggingIn = userRepository.findByUsername(user.getUsername());
+        Users userLoggingIn = userRepository.findByUsername(user.getUsername());
         boolean validLogin = bCryptPasswordEncoder.matches(user.getPassword(), userLoggingIn.getPassword());
         if(validLogin){
             session.setAttribute("username", userLoggingIn.getUsername());
@@ -84,9 +84,9 @@ public class UserController {
     }
 
     @PostMapping("/user/register")
-    public User register(@RequestBody User user, HttpSession session) throws Exception{
+    public Users register(@RequestBody Users user, HttpSession session) throws Exception{
         try{
-            User newUser = userService.saveUser(user);
+            Users newUser = userService.saveUser(user);
             session.setAttribute("username", newUser.getUsername());
             return newUser;
         }catch(Exception err){
@@ -96,17 +96,17 @@ public class UserController {
     }
 
     @GetMapping("/user/{id}")
-    public User getUser(@PathVariable Long id) throws Exception{
-        Optional<User> foundUser = userRepository.findById(id);
+    public Users getUser(@PathVariable Long id) throws Exception{
+        Optional<Users> foundUser = userRepository.findById(id);
         return foundUser.get();
     }
 
     @PutMapping("/user/{id}")
-    public User editUser(@PathVariable Long id, @RequestBody User user) throws Exception{
+    public Users editUser(@PathVariable Long id, @RequestBody Users user) throws Exception{
 
-            Optional<User> foundUser = userRepository.findById(id);
+            Optional<Users> foundUser = userRepository.findById(id);
             if(foundUser.isPresent()){
-                User userToEdit = foundUser.get();
+                Users userToEdit = foundUser.get();
                 if(user.getUsername() != ""){
                     userToEdit.setUsername(user.getUsername());
                 }
@@ -131,7 +131,7 @@ public class UserController {
     @PostMapping("/user/trail/{trail_id}")
     public Trail addTrailToFavorites(@PathVariable Long trail_id, HttpSession session) throws Exception{
         try{
-            User foundUser = userService.findUserByUsername(session.getAttribute("username").toString());
+            Users foundUser = userService.findUserByUsername(session.getAttribute("username").toString());
             Optional<Trail> foundTrail = trailRepository.findById(trail_id);
             foundUser.setFavoriteTrails(foundTrail.get());
             userRepository.save(foundUser);

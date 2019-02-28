@@ -1,10 +1,11 @@
 shredder/UserRepository.class
 shredder/WebConfig.class
+shredder/DatabaseConfig.class
 shredder/UserController.class
 shredder/TrailController.class
 shredder/TrailRepository.class
 shredder/SecurityConfig.class
 shredder/Application.class
+shredder/Users.class
 shredder/UserService.class
-shredder/User.class
 shredder/Trail.class
