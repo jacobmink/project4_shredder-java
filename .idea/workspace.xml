@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1e809fd-6375-4bce-bbaa-f2b8a9bf81b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/shredder/DatabaseConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shredder/Trail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shredder/Trail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shredder/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shredder/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shredder/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shredder/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shredder/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shredder/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shredder/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shredder/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/shredder/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shredder/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shredder/Trail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shredder/Trail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shredder/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shredder/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shredder/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shredder/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shredder/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shredder/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shredder/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shredder_backend_java-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/shredder_backend_java-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shredder_backend_java-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/shredder_backend_java-1.0-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/shredder/WebConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -198,7 +180,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551394784403" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551396216390" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -342,16 +324,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shredder/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -422,10 +394,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shredder/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shredder/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
