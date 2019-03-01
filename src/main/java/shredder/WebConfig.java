@@ -26,7 +26,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry){
         registry.addMapping("/**")
-                .allowedOrigins("https://shredder-react.herokuapp.com/")
+                .allowedOrigins("https://shredder-react.herokuapp.com")
 //                .allowedOrigins(env.getProperty("ALLOWED_ORIGINS"))
                 .allowedMethods("PUT", "DELETE", "POST", "OPTIONS", "HEAD", "GET")
                 .allowedHeaders("*")
