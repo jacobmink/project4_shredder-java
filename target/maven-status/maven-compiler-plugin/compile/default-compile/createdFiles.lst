@@ -1,6 +1,5 @@
 shredder/UserRepository.class
 shredder/WebConfig.class
-shredder/DatabaseConfig.class
 shredder/UserController.class
 shredder/TrailController.class
 shredder/TrailRepository.class
