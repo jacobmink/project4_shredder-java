@@ -17,8 +17,8 @@ import java.util.ArrayList;
 @EnableWebMvc
 public class WebConfig implements WebMvcConfigurer {
 
-//    @Value("${ALLOWED_ORIGINS}")
-//    private String frontEnd;
+    @Value("${ALLOWED_ORIGINS}")
+    private String frontEnd;
 
     @Autowired
     private Environment env;
@@ -26,7 +26,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry){
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:3000", "${ALLOWED_ORIGINS}")
+                .allowedOrigins("http://localhost:3000", frontEnd)
 //                .allowedOrigins(env.getProperty("ALLOWED_ORIGINS"))
                 .allowedMethods("PUT", "DELETE", "POST", "OPTIONS", "HEAD", "GET")
                 .allowedHeaders("*")
